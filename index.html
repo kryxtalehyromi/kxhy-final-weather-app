@@ -16,31 +16,42 @@
 <body>
     <div class="cuaca-app">
         <header>
-            <form>
-                <input type="search" placeholder="Search your city" required />
-                <input type="submit" value="Search" />
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Search your city" required id="search-form-input"
+                    class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <div>
-                <h1>Kuala Lumpur</h1>
-                <p>
-                    Thurday, 16:40, light rain
-                    <br />
-                    Humidity: 80%, Wind: 4.2km/h
-                </p>
+            <div class="cuaca-app-data">
+                <div>
+                    <h1 class="cuaca-app-city" id="city">Kuala Lumpur</h1>
+                    <p class="cuaca-app-details">
+                        <span id="time">Thurday, 16:40</span>,
+                        <span id="desc">light rain</span>
+                        <br />
+                        Humidity: <strong id="humidity">80%</strong>,
+                        Wind: <strong id="wind-speed">4.2km/h</strong>
+                    </p>
+                </div>
+                <div class="cuaca-app-temp-container">
+                    <div class="cuaca-app-icon" id="icon"></div>
+                    <div class="cuaca-app-temp-value" id="temp-value"> </div>
+                    <div class="cuaca-app-temp-unit">°C</div>
+                </div>
             </div>
-            <div>🌧️ 22°C</div>
         </main>
         <footer>
             <p>
-                This project was coded by
-                <a href="https://www.shecodes.io/graduates/102452-natasha-mohd-isa" target="_blank">Natasha Mohd
+                This project coded by
+                <a href="https://www.shecodes.io/graduates/102452-natasha-mohd-isa/" target="_blank"
+                    rel="noopener">Natasha Mohd
                     Isa</a>,
                 created on
-                <a href="https://github.com/kryxtalehyromi/weather-app-project-kxhy" target="_blank">GitHub</a>
+                <a href="https://github.com/kryxtalehyromi/kxhy-final-weather-app/" target="_blank"
+                    rel="noopener">GitHub</a>
                 and hosted on
-                <a href="https://willowy-conkies-711e39.netlify.app/" target="_blank">Netlify</a>.
+                <a href="https://extraordinary-kataifi-eccecb.netlify.app/" target="_blank" rel="noopener">Netlify</a>.
             </p>
         </footer>
     </div>
